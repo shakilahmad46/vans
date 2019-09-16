@@ -1,0 +1,22 @@
+uuid: c4d54ce9-a2e6-4ea1-9194-3d2abe5f6cc6
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalanswers
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: drupalanswers_powered
+theme: drupalanswers
+region: top_header
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

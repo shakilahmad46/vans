@@ -1,0 +1,30 @@
+uuid: bd9e6828-3a7d-4a77-830c-7ca89f4529f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sidebars
+  module:
+    - system
+    - views
+  theme:
+    - drupalanswers
+id: views_block__sidebars_block_3
+theme: drupalanswers
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'views_block:sidebars-block_3'
+settings:
+  id: 'views_block:sidebars-block_3'
+  label: 'Top Users'
+  provider: views
+  label_display: '0'
+  views_label: 'Top Users'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/new-member\r\n/user-profile/*"
+    negate: true
+    context_mapping: {  }

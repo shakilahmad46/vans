@@ -1,0 +1,34 @@
+uuid: 8f90f25b-9d1e-40ca-ab4f-7969ae9c3169
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sidebars
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - drupalanswers
+third_party_settings:
+  block_class:
+    classes: related-topics
+id: views_block__sidebars_block_5
+theme: drupalanswers
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'views_block:sidebars-block_5'
+settings:
+  id: 'views_block:sidebars-block_5'
+  label: 'Top Questions'
+  provider: views
+  label_display: '0'
+  views_label: 'Top Questions'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

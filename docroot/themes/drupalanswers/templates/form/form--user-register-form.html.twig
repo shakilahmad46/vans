@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+<!--{% set classes = ['py-5', 'shakil-form'] %}-->
+{{ attach_library('bootstrap_barrio/form') }}
+<div class="px-3 register-form-user" style="background: none;">
+    <div class="container">
+        <div class="row">
+            <div class="col ">
+                
+                        <form{{ attributes }}>
+                            {{ children }}
+                            </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+uuid: 2650a849-fa0e-4339-b55e-1e85cb81103e
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.final_node
+  module:
+    - node
+    - views
+  theme:
+    - drupalanswers
+id: views_block__final_node_block_2
+theme: drupalanswers
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:final_node-block_2'
+settings:
+  id: 'views_block:final_node-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      ask_question: ask_question
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

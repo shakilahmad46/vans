@@ -1,0 +1,30 @@
+uuid: 252307a0-0cb5-4e16-b55f-800a0a977993
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.qustion.body
+    - node.type.qustion
+  module:
+    - text
+    - user
+id: node.qustion.teaser
+targetEntityType: node
+bundle: qustion
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,31 @@
+uuid: c8c98a2e-bf7a-4b5e-8064-0d8c199d9e68
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b6c8ebd8-ebe5-449b-89bf-c91c90a1bee2'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalanswers
+id: askquestion
+theme: drupalanswers
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'block_content:b6c8ebd8-ebe5-449b-89bf-c91c90a1bee2'
+settings:
+  id: 'block_content:b6c8ebd8-ebe5-449b-89bf-c91c90a1bee2'
+  label: 'Ask Question'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/home\r\n/node/*"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,20 @@
+name = Field Collection views
+description = Provides a field-collection views formatter.
+core = 7.x
+configure = admin/config/user-interface/field_collection_views
+dependencies[] = field_collection
+dependencies[] = views
+files[] = views/field_collection_views_handler_field_host_entity_id.inc
+files[] = views/field_collection_views_handler_field_host_entity_path.inc
+files[] = views/field_collection_views_handler_field_field_path.inc
+files[] = views/field_collection_views_handler_field_host_entity_type.inc
+files[] = views/field_collection_views_handler_field_edit_link.inc
+files[] = views/field_collection_views_handler_field_delete_link.inc
+files[] = views/field_collection_views_handler_area_add_link.inc
+
+; Information added by Drupal.org packaging script on 2018-03-16
+version = "8.x-1.x-dev"
+core = "8.x"
+project = "field_collection_views"
+datestamp = "1521178987"
+

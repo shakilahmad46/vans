@@ -1,0 +1,37 @@
+uuid: 1a6db25c-9995-4883-b7e9-11cbe1fd11b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.answer.default
+    - field.field.node.ask_question.body
+    - field.field.node.ask_question.field_answer
+    - field.field.node.ask_question.field_pinned
+    - field.field.node.ask_question.field_tags
+    - field.field.node.ask_question.field_video
+    - field.field.node.ask_question.field_vote
+    - node.type.ask_question
+  module:
+    - comment
+    - user
+id: node.ask_question.default
+targetEntityType: node
+bundle: ask_question
+mode: default
+content:
+  field_answer:
+    type: comment_default
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_pinned: true
+  field_tags: true
+  field_video: true
+  field_vote: true
+  links: true

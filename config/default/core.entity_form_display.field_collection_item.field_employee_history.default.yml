@@ -1,0 +1,39 @@
+uuid: fd321a1b-e63c-47ec-bc74-81c1f8dc0f66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_employee_history.field_job_description
+    - field.field.field_collection_item.field_employee_history.field_job_duration
+    - field.field.field_collection_item.field_employee_history.field_job_title
+    - field_collection.field_collection.field_employee_history
+  module:
+    - datetime_range
+id: field_collection_item.field_employee_history.default
+targetEntityType: field_collection_item
+bundle: field_employee_history
+mode: default
+content:
+  field_job_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_job_duration:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_job_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

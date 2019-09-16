@@ -1,0 +1,48 @@
+uuid: 4b2fb166-a2fa-4bb7-97d5-2cd51f0e09a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_employee_history.field_job_description
+    - field.field.field_collection_item.field_employee_history.field_job_duration
+    - field.field.field_collection_item.field_employee_history.field_job_title
+    - field_collection.field_collection.field_employee_history
+  module:
+    - date_range_formatter
+id: field_collection_item.field_employee_history.default
+targetEntityType: field_collection_item
+bundle: field_employee_history
+mode: default
+content:
+  field_job_description:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_job_duration:
+    weight: 1
+    label: above
+    settings:
+      timezone_override: ''
+      single: 'm Y'
+      single_all_day: 'd F Y'
+      one_day: 'd F Y'
+      one_month: 'd - {d} F Y'
+      several_months: 'd F - {d} {F} Y'
+      several_years: 'd F Y - {d} {F} {Y}'
+      separator: '-'
+      date_format: 'Y-m-d\TH:i:s'
+    third_party_settings: {  }
+    type: date_range_without_time
+    region: content
+  field_job_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: 11d9de36-0aca-4dcc-a2f7-6982c05e67a5
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:858bc338-c1f8-4023-9fc9-e2e26dc59b19'
+  module:
+    - block_content
+  theme:
+    - drupalanswers
+id: getstart
+theme: drupalanswers
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:858bc338-c1f8-4023-9fc9-e2e26dc59b19'
+settings:
+  id: 'block_content:858bc338-c1f8-4023-9fc9-e2e26dc59b19'
+  label: 'Get Start'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

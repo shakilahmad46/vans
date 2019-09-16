@@ -1,0 +1,35 @@
+uuid: 7303387d-53c4-4ddf-9c0b-ffe5135c8f5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.final_user
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - drupalanswers
+third_party_settings:
+  block_class:
+    classes: 'w-100 dp'
+id: views_block__final_user_block_1_2
+theme: drupalanswers
+region: featured_top
+weight: -11
+provider: null
+plugin: 'views_block:final_user-block_1'
+settings:
+  id: 'views_block:final_user-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/user-page/*\r\n/user-profile/*"
+    negate: false
+    context_mapping: {  }

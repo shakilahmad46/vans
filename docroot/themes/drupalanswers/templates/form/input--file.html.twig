@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Theme override for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ *
+ * @see template_preprocess_input()
+ */
+#}
+<div class="file-field big">
+    <a class="btn-floating btn-lg pink lighten-1 mt-0 float-left">
+        <i class="fas fa-paperclip" aria-hidden="true"></i>
+        <!--      <input type="file" multiple>-->
+        <input{{ attributes }} style="
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0;
+">{{ children }}
+
+    </a>
+   
+</div>
+
+{#/**
+*<input{{ attributes.addClass("form-control") }} />{{ children }}
+*/#}

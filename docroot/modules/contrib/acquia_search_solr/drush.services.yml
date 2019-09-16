@@ -1,0 +1,5 @@
+services:
+  acquia_search_solr.commands:
+    class: \Drupal\acquia_search_solr\Commands\AcquiaSearchSolrCommands
+    tags:
+      - { name: drush.command }

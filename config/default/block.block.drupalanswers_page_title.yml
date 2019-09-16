@@ -1,0 +1,20 @@
+uuid: 16a077bf-35eb-4fe6-9f95-126eaf00056f
+langcode: en
+status: false
+dependencies:
+  theme:
+    - drupalanswers
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: drupalanswers_page_title
+theme: drupalanswers
+region: content
+weight: -9
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

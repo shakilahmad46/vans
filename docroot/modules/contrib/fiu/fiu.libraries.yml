@@ -1,0 +1,33 @@
+jquery.ui:
+  version: 1.12.1
+  license:
+    name: MIT
+  js:
+    js/jquery-ui.min.js: { minified: true }
+
+magnific_popup:
+  remote: http://dimsemenov.com/plugins/magnific-popup/
+  version: 1.0
+  license:
+      name: MIT
+  js:
+    js/magnific-popup.js: {}
+    js/jquery.magnific-popup.min.js: {minified: true}
+  css:
+    base:
+      css/magnific-popup.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+
+image:
+  version: 1.0
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/drupal.ajax
+    - fiu/jquery.ui
+    - fiu/magnific_popup

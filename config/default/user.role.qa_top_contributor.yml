@@ -1,0 +1,19 @@
+uuid: e51c4ffb-09c1-4f6b-a40f-fe919e6aab38
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - questions_answers
+_core:
+  default_config_hash: iJ_7xGcKmhwla0ydKT42-Yt-IEbicN_0t6CSnJSWMx4
+id: qa_top_contributor
+label: 'Questions and Answers Top Contributor'
+weight: 1
+is_admin: false
+permissions:
+  - 'administer questions and answers'
+  - 'answer questions and answers'
+  - 'ask questions and answers'
+  - 'report questions and answers'
+  - 'subscribe questions and answers'

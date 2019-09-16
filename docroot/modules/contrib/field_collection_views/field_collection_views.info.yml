@@ -1,0 +1,9 @@
+name: Field Collection views
+description: Provides a field-collection views formatter.
+# core: 7.x
+
+# Information added by Drupal.org packaging script on 2018-03-16
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'field_collection_views'
+datestamp: 1521178987

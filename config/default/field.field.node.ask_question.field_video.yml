@@ -1,0 +1,31 @@
+uuid: 0b3abf8a-8fcc-416d-8927-8cbf8775437a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - media.type.remote_video
+    - media.type.video
+    - node.type.ask_question
+id: node.ask_question.field_video
+field_name: field_video
+entity_type: node
+bundle: ask_question
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+      video: video
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: remote_video
+field_type: entity_reference

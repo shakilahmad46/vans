@@ -1,0 +1,30 @@
+uuid: 3d0be667-8be8-4515-b9f2-e56305a0b99d
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.sidebars
+  module:
+    - system
+    - views
+  theme:
+    - drupalanswers
+id: views_block__sidebars_block_1_2
+theme: drupalanswers
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:sidebars-block_1'
+settings:
+  id: 'views_block:sidebars-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,34 @@
+uuid: 7ee233a6-8045-427f-8760-7518f57fd407
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sidebars
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - drupalanswers
+third_party_settings:
+  block_class:
+    classes: total-question
+id: views_block__sidebars_block_2
+theme: drupalanswers
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'views_block:sidebars-block_2'
+settings:
+  id: 'views_block:sidebars-block_2'
+  label: Questions
+  provider: views
+  label_display: '0'
+  views_label: Questions
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "\r\n/user-profile/*"
+    negate: true
+    context_mapping: {  }

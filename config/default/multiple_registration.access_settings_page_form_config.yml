@@ -1,0 +1,7 @@
+multiple_registration_pages_white_list:
+  new_member: new_member
+  anonymous: 0
+  authenticated: 0
+  qa_staff_member: 0
+  qa_top_contributor: 0
+  administrator: 0

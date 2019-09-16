@@ -1,0 +1,21 @@
+uuid: 0b72fd68-e171-4004-93e5-a5442785c019
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_date_of_birth
+    - profile.type.user_profile
+  module:
+    - datetime
+id: profile.user_profile.field_date_of_birth
+field_name: field_date_of_birth
+entity_type: profile
+bundle: user_profile
+label: 'Date of Birth'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

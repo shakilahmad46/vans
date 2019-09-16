@@ -1,0 +1,22 @@
+uuid: 3a88bbd3-5b76-4d82-890d-babcbc2d40c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.qustion
+  module:
+    - text
+id: node.qustion.body
+field_name: body
+entity_type: node
+bundle: qustion
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

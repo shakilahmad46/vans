@@ -1,0 +1,42 @@
+uuid: 70ac8b38-460b-4d5c-9269-84fc1ea33f9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.qustion.body
+    - field.field.node.qustion.field_question2
+    - node.type.qustion
+  module:
+    - questions_answers
+    - text
+    - user
+id: node.qustion.default
+targetEntityType: node
+bundle: qustion
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_question2:
+    weight: 102
+    label: above
+    settings:
+      default_questions_status: false
+      default_answers_status: false
+      allow_helpful: true
+      date_display: fallback
+      notify_new_questions: ''
+    third_party_settings: {  }
+    type: questions_answers_formatter
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,17 @@
+uuid: caa59dff-67d4-432b-9c91-4d2034d1347c
+langcode: en
+status: true
+dependencies: {  }
+id: user_profile
+label: 'User Profile'
+registration: false
+multiple: false
+roles:
+  authenticated: authenticated
+  administrator: administrator
+  qa_staff_member: '0'
+  qa_top_contributor: '0'
+  new_member: '0'
+weight: 0
+use_revisions: false
+description: ''

@@ -1,0 +1,21 @@
+uuid: 5cd2aef6-ee59-45b1-bbb1-1751de476de8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_job_duration
+    - field_collection.field_collection.field_employee_history
+  module:
+    - datetime_range
+id: field_collection_item.field_employee_history.field_job_duration
+field_name: field_job_duration
+entity_type: field_collection_item
+bundle: field_employee_history
+label: 'Job Duration'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

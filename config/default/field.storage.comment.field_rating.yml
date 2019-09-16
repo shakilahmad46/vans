@@ -1,0 +1,22 @@
+uuid: 01646987-e3d3-4388-a5f1-e14ec9ba810d
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - votingapi_widgets
+id: comment.field_rating
+field_name: field_rating
+entity_type: comment
+type: voting_api_field
+settings:
+  vote_type: vote
+  vote_plugin: fivestar
+  status: ''
+module: votingapi_widgets
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

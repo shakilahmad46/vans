@@ -1,0 +1,20 @@
+uuid: eb72c4ed-7eae-422b-9775-56870577884e
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - media
+id: comment.field_video_answer
+field_name: field_video_answer
+entity_type: comment
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

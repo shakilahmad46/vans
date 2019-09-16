@@ -1,0 +1,22 @@
+uuid: 3c891606-afe0-40ae-acdb-68cc25c4c850
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalanswers
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: drupalanswers_content
+theme: drupalanswers
+region: content
+weight: -11
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

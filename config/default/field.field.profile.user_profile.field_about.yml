@@ -1,0 +1,21 @@
+uuid: 170de66f-b000-4284-a4b9-fd53c846e1b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_about
+    - profile.type.user_profile
+  module:
+    - text
+id: profile.user_profile.field_about
+field_name: field_about
+entity_type: profile
+bundle: user_profile
+label: About
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

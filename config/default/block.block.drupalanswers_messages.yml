@@ -1,0 +1,22 @@
+uuid: 31c7ef3c-9abc-417c-b06b-ebf6f5e57980
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalanswers
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: drupalanswers_messages
+theme: drupalanswers
+region: highlighted
+weight: -11
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

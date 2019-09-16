@@ -1,0 +1,32 @@
+uuid: ad43b034-abb8-4c94-a811-190a796cc79f
+langcode: en
+status: true
+dependencies: {  }
+id: new_member
+label: 'New Member'
+weight: 3
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'access user profiles'
+  - 'ask questions and answers'
+  - 'change own username'
+  - 'clone ask_question content'
+  - 'create ask_question content'
+  - 'delete any page content'
+  - 'delete ask_question revisions'
+  - 'delete own ask_question content'
+  - 'delete own user_profile profile'
+  - 'edit own ask_question content'
+  - 'edit own comments'
+  - 'post comments'
+  - 'revert ask_question revisions'
+  - 'skip comment approval'
+  - 'switch users'
+  - 'update own user_profile profile'
+  - 'view any profile'
+  - 'view any user_profile profile'
+  - 'view ask_question revisions'
+  - 'view own profile'
+  - 'view own user_profile profile'
+  - 'vote on node:ask_question:field_vote'

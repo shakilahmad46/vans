@@ -1,0 +1,19 @@
+uuid: 0fb57a89-e97e-47a8-a72b-30bd89ac33d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_contact
+    - profile.type.user_profile
+id: profile.user_profile.field_contact
+field_name: field_contact
+entity_type: profile
+bundle: user_profile
+label: Contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

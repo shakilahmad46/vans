@@ -1,0 +1,14 @@
+uuid: 820bade2-5ebb-46cc-b133-51988e527f77
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.new_member
+  module:
+    - user
+id: user_add_role_action.new_member
+label: 'Add the New Member role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: new_member

@@ -1,0 +1,51 @@
+uuid: 86d81ae0-c1e7-4357-92a4-f05e6b25cdad
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.answer
+    - field.field.comment.answer.comment_body
+    - field.field.comment.answer.field_rating
+    - field.field.comment.answer.field_video_answer
+  module:
+    - text
+    - votingapi_widgets
+id: comment.answer.default
+targetEntityType: comment
+bundle: answer
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_rating:
+    weight: 4
+    label: above
+    settings:
+      readonly: false
+      style: default
+      show_results: false
+      values: {  }
+      show_own_vote: false
+    third_party_settings: {  }
+    type: voting_api_formatter
+    region: content
+  field_video_answer:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

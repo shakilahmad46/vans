@@ -1,0 +1,34 @@
+block.settings.cheesebuger_menu_block:
+  type: block_settings
+  label: 'Cheeseburger Menu'
+  mapping:
+    block_machine_name:
+      type: string
+      label: 'ID of block entity'
+    css_default:
+      type: integer
+      label: 'Default CSS'
+    show_navigation:
+      type: integer
+      label: 'Show navigation'
+    header_height:
+      type: integer
+      label: 'Header height'
+    menu:
+      type: ignore
+      label: 'Menu information'
+    phone:
+      type: ignore
+      label: 'Phone info'
+    lang_switcher:
+      type: ignore
+      label: 'Lang switcher info'
+    cart:
+      type: ignore
+      label: 'Cart info'
+    breakpoints:
+      type: ignore
+      label: 'Defined breakpoints'
+    active_state_enable:
+      type: integer
+      label: 'Activate menu items'

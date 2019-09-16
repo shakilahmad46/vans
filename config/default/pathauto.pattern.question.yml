@@ -1,0 +1,22 @@
+uuid: 99f2df2c-816f-41a8-89f6-47e4cedc333d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: question
+label: question
+type: 'canonical_entities:node'
+pattern: 'ques-[node:title]'
+selection_criteria:
+  c0cc0583-6e41-4f56-b939-3180ec84d560:
+    id: node_type
+    bundles:
+      ask_question: ask_question
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c0cc0583-6e41-4f56-b939-3180ec84d560
+selection_logic: and
+weight: -5
+relationships: {  }

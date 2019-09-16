@@ -1,0 +1,30 @@
+uuid: 0a57198c-2334-469e-982d-05fee35f3e99
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.right-men
+  module:
+    - system
+  theme:
+    - drupalanswers
+id: rightmenu
+theme: drupalanswers
+region: sidebar_first
+weight: -13
+provider: null
+plugin: 'system_menu_block:right-men'
+settings:
+  id: 'system_menu_block:right-men'
+  label: 'Right Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /new-member
+    negate: true
+    context_mapping: {  }

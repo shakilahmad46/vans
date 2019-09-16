@@ -1,0 +1,28 @@
+uuid: beb4202d-01f9-4daa-bbc6-256be4f6d311
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.answer
+    - field.storage.comment.field_rating
+  module:
+    - votingapi_widgets
+id: comment.answer.field_rating
+field_name: field_rating
+entity_type: comment
+bundle: answer
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: '1'
+    value: 0
+default_value_callback: ''
+settings:
+  anonymous_window: '0'
+  user_window: '0'
+  result_function: vote_average
+  widget_format: fivestar
+field_type: voting_api_field

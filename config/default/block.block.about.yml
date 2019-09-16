@@ -1,0 +1,25 @@
+uuid: 04920999-6541-4724-a76c-8706459944c2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c3fb8130-2d96-4a35-ae9a-3d5078165902'
+  module:
+    - block_content
+  theme:
+    - drupalanswers
+id: about
+theme: drupalanswers
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:c3fb8130-2d96-4a35-ae9a-3d5078165902'
+settings:
+  id: 'block_content:c3fb8130-2d96-4a35-ae9a-3d5078165902'
+  label: About
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

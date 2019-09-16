@@ -1,0 +1,22 @@
+uuid: 6dd92290-ab65-420d-8e1b-d49114b629f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.dashboard
+    - field.field.config_pages.dashboard.field_title
+id: config_pages.dashboard.default
+targetEntityType: config_pages
+bundle: dashboard
+mode: default
+content:
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  label: true

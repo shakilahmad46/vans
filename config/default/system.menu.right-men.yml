@@ -1,0 +1,8 @@
+uuid: 7adaf253-fef9-4d42-8733-71543a65d508
+langcode: en
+status: true
+dependencies: {  }
+id: right-men
+label: 'Right Menu'
+description: ''
+locked: false

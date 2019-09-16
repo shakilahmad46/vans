@@ -1,0 +1,35 @@
+uuid: 00dfd070-cbf8-4414-936b-6950e709fc2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sidebars
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - drupalanswers
+third_party_settings:
+  block_class:
+    classes: related-topics
+id: views_block__sidebars_block_1
+theme: drupalanswers
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:sidebars-block_1'
+settings:
+  id: 'views_block:sidebars-block_1'
+  label: 'Related Topics'
+  provider: views
+  label_display: visible
+  views_label: 'Related Topics'
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/node/*'
+    negate: false
+    context_mapping: {  }

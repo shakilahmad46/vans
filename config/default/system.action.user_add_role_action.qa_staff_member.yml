@@ -1,0 +1,14 @@
+uuid: 15d3a717-7e91-4d6c-8870-5345af9e4237
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.qa_staff_member
+  module:
+    - user
+id: user_add_role_action.qa_staff_member
+label: 'Add the Questions and Answers Staff Member role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: qa_staff_member

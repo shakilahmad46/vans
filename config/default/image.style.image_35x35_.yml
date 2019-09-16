@@ -1,0 +1,15 @@
+uuid: 8b7e5480-4d59-469b-8bb9-6fb439b06cce
+langcode: en
+status: true
+dependencies: {  }
+name: image_35x35_
+label: Image(35x35)
+effects:
+  7de3cfa8-5639-4237-a534-039346489a86:
+    uuid: 7de3cfa8-5639-4237-a534-039346489a86
+    id: image_scale
+    weight: 1
+    data:
+      width: 35
+      height: 35
+      upscale: false

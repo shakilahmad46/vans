@@ -1,0 +1,3 @@
+dependencies:
+    'core/drupal.dialog.ajax',
+      'core/jquery.form',

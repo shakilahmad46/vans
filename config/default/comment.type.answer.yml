@@ -1,0 +1,8 @@
+uuid: 3417a749-b8a2-4e47-810a-9efbb6a8118b
+langcode: en
+status: true
+dependencies: {  }
+id: answer
+label: Answer
+target_entity_type_id: node
+description: 'An answer to the Question'

@@ -1,0 +1,21 @@
+uuid: e2a6bfa9-848b-4d62-8463-1c92337064c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+    - social_profile_field
+id: profile.field_social_links
+field_name: field_social_links
+entity_type: profile
+type: social_profile_url
+settings:
+  max_length: '2048'
+  case_sensitive: false
+module: social_profile_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

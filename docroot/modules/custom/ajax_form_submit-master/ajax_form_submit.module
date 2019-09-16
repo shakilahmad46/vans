@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * @file
+ * Implementing some hooks and preprocesses if needed.
+ */
+function ajax_form_submit_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+//    ksm($form);
+}

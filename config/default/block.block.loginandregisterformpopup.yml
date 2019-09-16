@@ -1,0 +1,20 @@
+uuid: 3d7f56fd-c6cd-4acb-affa-eb3f8acbe709
+langcode: en
+status: true
+dependencies:
+  module:
+    - login_popup
+  theme:
+    - drupalanswers
+id: loginandregisterformpopup
+theme: drupalanswers
+region: secondary_menu
+weight: -11
+provider: null
+plugin: login_register_form_popup
+settings:
+  id: login_register_form_popup
+  label: 'Login And Register Form popup'
+  provider: login_popup
+  label_display: '0'
+visibility: {  }

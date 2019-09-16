@@ -1,0 +1,29 @@
+uuid: b19006d6-08eb-48de-8ff9-ef28486dd7ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalanswers
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: drupalanswers_local_tasks
+theme: drupalanswers
+region: content
+weight: -14
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

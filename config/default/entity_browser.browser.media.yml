@@ -1,0 +1,33 @@
+uuid: 05266a08-6eb7-4c43-b25d-2c5e9d62bb09
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_item
+  module:
+    - views
+name: media
+label: Media
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: view
+selection_display_configuration:
+  view: media_item
+  view_display: entity_browser_1
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  848fea07-231f-42e8-b8b0-e2136be8951d:
+    settings:
+      upload_location: 'public://'
+      multiple: true
+      submit_text: 'Select Video'
+      extensions: mp4
+    uuid: 848fea07-231f-42e8-b8b0-e2136be8951d
+    weight: 1
+    label: upload
+    id: upload

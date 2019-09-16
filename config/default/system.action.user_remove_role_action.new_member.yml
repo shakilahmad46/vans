@@ -1,0 +1,14 @@
+uuid: 5e8a8617-d74b-414f-bb44-6aa46ebe30e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.new_member
+  module:
+    - user
+id: user_remove_role_action.new_member
+label: 'Remove the New Member role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: new_member

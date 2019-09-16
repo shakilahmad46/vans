@@ -1,0 +1,18 @@
+uuid: d31c7717-5773-4d58-b9ce-6f3ffd0bc7fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ask_question
+id: node.ask_question.title
+field_name: title
+entity_type: node
+bundle: ask_question
+label: 'Question Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

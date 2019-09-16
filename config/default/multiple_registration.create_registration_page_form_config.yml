@@ -1,0 +1,5 @@
+multiple_registration_path_new_member: new-member
+multiple_registration_url_new_member: /user/register/new_member
+multiple_registration_hidden_new_member: 1
+multiple_registration_form_mode_register_new_member: register
+multiple_registration_form_mode_edit_new_member: register

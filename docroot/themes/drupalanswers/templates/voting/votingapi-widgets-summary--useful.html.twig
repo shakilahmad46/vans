@@ -1,0 +1,8 @@
+{{ trans }}
+{% if results.vote_field_count|default is empty %}
+<p><b>0 </b></p>
+{% else %}
+<p><b>{{ results.vote_field_count }} </b></p>
+
+{% endif %}
+{{ endtrans }}

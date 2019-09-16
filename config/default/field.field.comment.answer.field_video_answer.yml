@@ -1,0 +1,31 @@
+uuid: 84106bc7-e5d3-44cf-825d-569246259b1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.answer
+    - field.storage.comment.field_video_answer
+    - media.type.remote_video
+    - media.type.video
+id: comment.answer.field_video_answer
+field_name: field_video_answer
+entity_type: comment
+bundle: answer
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+      video: video
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: remote_video
+field_type: entity_reference

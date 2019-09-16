@@ -1,0 +1,13 @@
+uuid: d277eb75-23e8-4f06-8c91-d8babfd7a4c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.correct_answer.flag
+label: Correct
+type: comment
+plugin: 'flag_action:correct_answer.flag'
+configuration:
+  flag_id: correct_answer
+  flag_action: flag

@@ -1,0 +1,21 @@
+uuid: 1a9026a0-ca4c-47fc-9e2d-a3d7e83e67aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_account_status
+    - profile.type.user_profile
+  module:
+    - options
+id: profile.user_profile.field_account_status
+field_name: field_account_status
+entity_type: profile
+bundle: user_profile
+label: 'Account Status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

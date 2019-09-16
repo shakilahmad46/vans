@@ -1,0 +1,30 @@
+uuid: b0c9fc83-fcc3-415d-bee4-92a8d64e32a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.review.body
+    - node.type.review
+  module:
+    - text
+    - user
+id: node.review.teaser
+targetEntityType: node
+bundle: review
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

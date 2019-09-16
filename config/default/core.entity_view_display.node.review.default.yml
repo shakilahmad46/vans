@@ -1,0 +1,42 @@
+uuid: da49fcd3-d4d2-48d3-92a7-7946f26d4cef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.review.body
+    - field.field.node.review.field_rating
+    - node.type.review
+  module:
+    - text
+    - user
+    - votingapi_widgets
+id: node.review.default
+targetEntityType: node
+bundle: review
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_rating:
+    weight: 102
+    label: above
+    settings:
+      style: default
+      readonly: '1'
+      show_own_vote: '1'
+      show_results: 0
+      values: {  }
+    third_party_settings: {  }
+    type: voting_api_formatter
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

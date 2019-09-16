@@ -1,0 +1,19 @@
+uuid: bfca8c39-f3fa-48fb-a9b3-9a3d935c3e9a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - questions_answers
+_core:
+  default_config_hash: zOJ7vXSXXs0UY5VzYOZ22mjWjMjqDY0nLdeqwULtSuI
+id: qa_staff_member
+label: 'Questions and Answers Staff Member'
+weight: 1
+is_admin: false
+permissions:
+  - 'administer questions and answers'
+  - 'answer questions and answers'
+  - 'ask questions and answers'
+  - 'report questions and answers'
+  - 'subscribe questions and answers'

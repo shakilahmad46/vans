@@ -1,0 +1,14 @@
+{
+  "name": "drupal/custom",
+  "type": "drupal-module",
+  "description": "this my custom module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/custom",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/custom",
+    "source": "http://cgit.drupalcode.org/custom"
+  },
+  "require": { }
+}

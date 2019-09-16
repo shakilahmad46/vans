@@ -1,0 +1,33 @@
+uuid: cc74f532-0965-482b-b4bc-5cfa1695aa2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_answer
+    - node.type.ask_question
+  module:
+    - comment
+id: node.ask_question.field_answer
+field_name: field_answer
+entity_type: node
+bundle: ask_question
+label: Answer
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 20
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

@@ -1,0 +1,31 @@
+uuid: 4be0197b-3c25-4b74-ae39-5f1600184b80
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.final_node
+  module:
+    - system
+    - views
+  theme:
+    - drupalanswers
+id: views_block__final_node_block_2_2
+theme: drupalanswers
+region: content
+weight: -13
+provider: null
+plugin: 'views_block:final_node-block_2'
+settings:
+  id: 'views_block:final_node-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/45/edit
+    negate: true
+    context_mapping: {  }

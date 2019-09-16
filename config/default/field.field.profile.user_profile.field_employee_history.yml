@@ -1,0 +1,23 @@
+uuid: e7e932f3-640a-4f7a-b3ed-f36884448213
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_employee_history
+    - profile.type.user_profile
+  module:
+    - field_collection
+id: profile.user_profile.field_employee_history
+field_name: field_employee_history
+entity_type: profile
+bundle: user_profile
+label: 'Employee History'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

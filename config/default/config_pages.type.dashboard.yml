@@ -1,0 +1,14 @@
+uuid: 6b449ff2-8fb0-4780-b2e6-3f11e1738685
+langcode: en
+status: true
+dependencies: {  }
+id: dashboard
+label: Dashboard
+context:
+  show_warning: true
+  group:
+    language: false
+menu:
+  path: /dashboard
+  weight: 0
+  description: ''

@@ -1,0 +1,22 @@
+uuid: edeafde7-f8e2-4414-9c0e-ce0beb02fe67
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - votingapi_widgets
+id: node.field_vote
+field_name: field_vote
+entity_type: node
+type: voting_api_field
+settings:
+  vote_type: vote
+  vote_plugin: fivestar
+  status: ''
+module: votingapi_widgets
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

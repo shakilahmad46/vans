@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Load all Field module hooks for Image.
+ */
+
+require_once __DIR__ . '/fiu.field.inc';
+
+/**
+ * Implements hook_theme().
+ */
+function fiu_theme() {
+  return [
+    // Theme functions in fiu.field.inc.
+    'fine_image_widget' => [
+      'render element' => 'element',
+      'file' => 'fiu.field.inc',
+    ],
+    'fine_image_widget_unitary' => [
+      'render element' => 'element',
+      'file' => 'fiu.field.inc',
+    ],
+    'fine_image_widget_multiple' => [
+      'render element' => 'element',
+      'file' => 'fiu.field.inc',
+    ],
+  ];
+}

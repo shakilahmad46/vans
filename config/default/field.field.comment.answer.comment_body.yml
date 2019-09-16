@@ -1,0 +1,21 @@
+uuid: ada23a97-73e8-4fb2-97c8-1d52af46ca1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.answer
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.answer.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: answer
+label: 'Answer '
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

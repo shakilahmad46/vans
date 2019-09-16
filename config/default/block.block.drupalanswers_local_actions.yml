@@ -1,0 +1,20 @@
+uuid: 27729ecb-4154-49a4-a918-5547dfbb5e85
+langcode: en
+status: false
+dependencies:
+  theme:
+    - drupalanswers
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: drupalanswers_local_actions
+theme: drupalanswers
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

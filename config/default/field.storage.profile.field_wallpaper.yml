@@ -1,0 +1,30 @@
+uuid: 1391a2ab-8de7-44e1-85bd-4095c80552be
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - profile
+id: profile.field_wallpaper
+field_name: field_wallpaper
+entity_type: profile
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

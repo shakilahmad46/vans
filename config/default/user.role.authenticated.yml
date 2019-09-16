@@ -1,0 +1,22 @@
+uuid: a3625327-b6bd-4d31-aef9-29bb6b0bffa2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'switch users'
+  - 'use text format basic_html'
+  - 'view media'
+  - 'vote on node:ask_question:field_vote'

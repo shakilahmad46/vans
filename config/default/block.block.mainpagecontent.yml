@@ -1,0 +1,20 @@
+uuid: b9fbfbc5-8ed7-4508-be85-3ba9e07a8225
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalanswers
+id: mainpagecontent
+theme: drupalanswers
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

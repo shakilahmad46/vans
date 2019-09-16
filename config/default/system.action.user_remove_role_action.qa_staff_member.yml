@@ -1,0 +1,14 @@
+uuid: e44a1084-4cdf-4e79-8ccb-199d79e449fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.qa_staff_member
+  module:
+    - user
+id: user_remove_role_action.qa_staff_member
+label: 'Remove the Questions and Answers Staff Member role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: qa_staff_member

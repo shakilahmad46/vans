@@ -1,0 +1,20 @@
+uuid: 3c6188d2-3d89-49e3-aba0-a7f246668df2
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - field_collection
+id: field_collection_item.field_job_duration
+field_name: field_job_duration
+entity_type: field_collection_item
+type: daterange
+settings:
+  datetime_type: date
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

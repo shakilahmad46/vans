@@ -1,0 +1,30 @@
+uuid: 242dfb46-d5c1-447d-8238-b750b764b780
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.final_node
+  module:
+    - system
+    - views
+  theme:
+    - drupalanswers
+id: views_block__final_node_block_3
+theme: drupalanswers
+region: content
+weight: -15
+provider: null
+plugin: 'views_block:final_node-block_3'
+settings:
+  id: 'views_block:final_node-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
