@@ -11,7 +11,7 @@ bundles:
 entity_type: comment
 global: true
 weight: 0
-flag_short: Like
+flag_short: Correct
 flag_long: ''
 flag_message: ''
 unflag_short: Unlike
@@ -23,8 +23,8 @@ link_type: ajax_link
 flagTypeConfig:
   show_in_links: {  }
   show_as_field: true
-  show_on_form: false
-  show_contextual_link: false
+  show_on_form: true
+  show_contextual_link: true
   extra_permissions:
     parent_owner: parent_owner
     owner: '0'

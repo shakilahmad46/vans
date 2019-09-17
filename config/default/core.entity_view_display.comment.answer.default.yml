@@ -6,8 +6,9 @@ dependencies:
     - comment.type.answer
     - field.field.comment.answer.comment_body
     - field.field.comment.answer.field_rating
-    - field.field.comment.answer.field_video_answer
+    - field.field.comment.answer.field_video_file
   module:
+    - file
     - text
     - votingapi_widgets
 id: comment.answer.default
@@ -23,8 +24,8 @@ content:
     third_party_settings: {  }
     region: content
   field_rating:
-    weight: 4
-    label: above
+    weight: 3
+    label: hidden
     settings:
       readonly: false
       style: default
@@ -34,17 +35,27 @@ content:
     third_party_settings: {  }
     type: voting_api_formatter
     region: content
-  field_video_answer:
-    type: entity_reference_entity_view
-    weight: 1
+  field_video_file:
+    weight: 2
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      muted: false
+      width: 640
+      height: 480
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
     third_party_settings: {  }
+    type: file_video
     region: content
+  flag_correct_answer:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   links:
-    weight: 3
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
