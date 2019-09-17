@@ -4,7 +4,6 @@ module:
   admin_toolbar_tools: 0
   ajax_comments: 0
   ajax_form_submit: 0
-  ajax_modal_popup: 0
   autocomplete_deluxe: 0
   automated_cron: 0
   better_exposed_filters: 0
@@ -27,7 +26,6 @@ module:
   datetime: 0
   datetime_range: 0
   dblog: 0
-  devel: 0
   devel_generate: 0
   dynamic_page_cache: 0
   easy_breadcrumb: 0
@@ -40,6 +38,7 @@ module:
   field: 0
   field_collection: 0
   field_collection_table: 0
+  field_states_ui: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -48,6 +47,7 @@ module:
   flysystem_s3: 0
   fontawesome: 0
   fontawesome_menu_icons: 0
+  form_placeholder: 0
   formblock: 0
   help: 0
   history: 0
@@ -74,7 +74,6 @@ module:
   page_manager_ui: 0
   panels: 0
   path: 0
-  popup_maker: 0
   profile: 0
   questions_answers: 0
   quick_node_clone: 0
@@ -92,18 +91,21 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  twig_vardumper: 0
   update: 0
   user: 0
   userswitch: 0
+  vardumper: 0
   video: 0
+  video_embed_field: 0
   videojs: 0
   views_block_area: 0
+  views_conditional: 0
   views_field_view: 0
   views_ui: 0
   views_url_path_arguments: 0
   votingapi: 0
   votingapi_widgets: 0
-  webprofiler: 0
   ds: 1
   menu_link_content: 1
   pathauto: 1

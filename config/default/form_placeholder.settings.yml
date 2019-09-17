@@ -1,0 +1,5 @@
+included_selectors: 'input, textarea'
+excluded_selectors: ''
+required_indicator: leave
+_core:
+  default_config_hash: fvvuim-Xfi2KRJiSVE9-Lj7cD6aDfjQxQ3Xnoe0TG18
