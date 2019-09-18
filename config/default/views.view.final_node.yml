@@ -7,6 +7,8 @@ dependencies:
     - field.storage.node.field_pinned
     - field.storage.node.field_tags
     - field.storage.node.field_video
+    - field.storage.node.field_video_file
+    - field.storage.node.field_video_link
     - field.storage.node.field_vote
     - field.storage.user.user_picture
     - image.style.image_35x35_
@@ -16,11 +18,13 @@ dependencies:
   module:
     - better_exposed_filters
     - comment
+    - file
     - image
     - node
     - nodeviewcount
     - text
     - user
+    - video_embed_field
     - views_field_view
     - votingapi_widgets
 id: final_node
@@ -2572,6 +2576,135 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_video_file:
+          id: field_video_file
+          table: node__field_video_file
+          field: field_video_file
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: true
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: display
+          type: file_video
+          settings:
+            use_description_as_link_text: 0
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_video_link:
+          id: field_video_link
+          table: node__field_video_link
+          field: field_video_link
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: true
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: video_embed_field_video
+          settings:
+            autoplay: true
+            responsive: true
+            width: 854
+            height: 480
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       defaults:
         fields: false
         arguments: false
@@ -2634,6 +2767,8 @@ display:
         - 'config:field.storage.node.field_pinned'
         - 'config:field.storage.node.field_tags'
         - 'config:field.storage.node.field_video'
+        - 'config:field.storage.node.field_video_file'
+        - 'config:field.storage.node.field_video_link'
         - 'config:field.storage.node.field_vote'
         - 'config:field.storage.user.user_picture'
   block_3:
@@ -2903,6 +3038,293 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_video_file:
+          id: field_video_file
+          table: node__field_video_file
+          field: field_video_file
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: display
+          type: file_video
+          settings:
+            use_description_as_link_text: 0
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_video_link:
+          id: field_video_link
+          table: node__field_video_link
+          field: field_video_link
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: video_embed_field_video
+          settings:
+            autoplay: false
+            responsive: true
+            width: 854
+            height: 480
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        nid:
+          id: nid
+          table: nodeviewcount
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          plugin_id: node_view_count_node_id
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view: node_views_count_statistics
+          display: clicks_count
+          arguments: '{{ fields.nid }}'
+          plugin_id: view
+        comment_count:
+          id: comment_count
+          table: comment_entity_statistics
+          field: comment_count
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ','
+          format_plural: false
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
+          plugin_id: numeric
         nothing:
           id: nothing
           table: views
@@ -2914,7 +3336,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h6>{{ title }}</h6>\r\n                            <a href=\"user-profile/{{ uid }} \">                            \r\n                            {{ name_1 }}\r\n                        </a>\r\n                            <div class=\"d-flex\">\r\n                                <a href=\"#\" class=\"latest-user-name col p-0\">3.5k view</a>\r\n                                <a href=\"#\" class=\"latest-user-name col p-0 \">3.5k view</a>\r\n\r\n                            </div>\r\n                            <hr class=\"d-block d-md-none\">"
+            text: "<h6>{{ title }}</h6>\r\n                            <a href=\"user-profile/{{ uid }} \">                            \r\n                            {{ name_1 }}\r\n                        </a>\r\n                            <div class=\"d-flex\">\r\n                                <a href=\"#\" class=\"latest-user-name col p-0\">{{ view }} view</a>\r\n                                <a href=\"#\" class=\"latest-user-name col p-0 \">{{ comment_count }}  Answers</a>\r\n\r\n                            </div>\r\n                            <hr class=\"d-block d-md-none\">"
             make_link: false
             path: ''
             absolute: false
@@ -3003,6 +3425,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_video'
+        - 'config:field.storage.node.field_video_file'
+        - 'config:field.storage.node.field_video_link'
   page_1:
     display_plugin: page
     id: page_1
@@ -5223,7 +5647,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"col-12 bg-white\">\r\n                            <div class=\"row p-4\">\r\n\r\n                                <div class=\"col-md-1 col-12 p-0 pl-md-3 pr-1 user-img\">\r\n                                    <a href=\"user-profile/{{ uid }} \">                            \r\n                                     {{ user_picture }}\r\n                                     </a>\r\n                                     <div class=\"append-vote\">\r\n                                           <p class=\"badge badge-light rounded-0 front-vote-count mt-sm-3 py-2 d-block\"></p>\r\n                                               <span class=\"badge badge-dark rounded-0 py-1\">Votes</span>\r\n                                             </div>\r\n                                </div>\r\n                                \r\n                                <div class=\"col-md-4 p-0 pl-md-4\">\r\n                                    <div class=\"front-video-wrapper mb-5\">\r\n                                       \r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"col-md-7 px-0 px-sm-3\">\r\n                                    <h6>{{ title }}</h6>\r\n                                    <p>{{ body }}</p>\r\n                                    <span class=\"time\"></i><time class=\"ml-2\">{{ field_tags }}</time></span>\r\n                                </div>\r\n                                <div class=\"col-1 d-md-block d-none d-sm-none\"></div>\r\n                                <div class=\"col ml-md-4 front-question-info  border p-2\">\r\n                                    <span>\r\n                                        <i class=\"fas fa-eye\"></i> {{ view }} Views\r\n                                    </span>\r\n                                    <span class=\"ml-3\">\r\n                                        <i class=\"fas fa-eye\"></i> {{ comment_count }} Answers\r\n                                    </span>\r\n                                    <span class=\"ml-3 float-right\">\r\n                                        <a href=\"#answer\" class=\"btn text-warning p-1 rounded-0\"><i class=\"far fa-edit mr-1\"></i>Answer</a>\r\n                                    </span>\r\n                                </div>\r\n                            </div>\r\n                        </div>"
+            text: "<div class=\"col-12 bg-white\">\r\n                            <div class=\"row p-4\">\r\n\r\n                                <div class=\"col-12 col-md-1 d-flex d-md-block justify-content-between p-0 pl-md-3 pr-1 user-img\">\r\n                                    <a href=\"user-profile/{{ uid }} \">                            \r\n                                     {{ user_picture }}\r\n                                     </a>\r\n                                     <div class=\"append-vote\">\r\n                                           <p class=\"badge badge-light rounded-0 front-vote-count mt-sm-3 py-2 d-block\"></p>\r\n                                               <span class=\"badge badge-dark rounded-0 py-1\">Votes</span>\r\n                                             </div>\r\n                                </div>\r\n                                \r\n                                <div class=\"col-md-4 p-0 pl-md-4\">\r\n                                    <div class=\"front-video-wrapper mb-5\">\r\n                                       \r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"col-md-7 px-0 px-sm-3\">\r\n                                    <h6>{{ title }}</h6>\r\n                                    <p>{{ body }}</p>\r\n                                    <span class=\"time\"></i><time class=\"ml-2\">{{ field_tags }}</time></span>\r\n                                </div>\r\n                                <div class=\"col-1 d-md-block d-none d-sm-none\"></div>\r\n                                <div class=\"col ml-md-4 front-question-info  border p-2\">\r\n                                    <span>\r\n                                        <i class=\"fas fa-eye\"></i> {{ view }} Views\r\n                                    </span>\r\n                                    <span class=\"ml-3\">\r\n                                        <i class=\"fas fa-eye\"></i> {{ comment_count }} Answers\r\n                                    </span>\r\n                                    <span class=\"ml-3 float-right\">\r\n                                        <a href=\"#answer\" class=\"btn text-warning p-1 rounded-0\"><i class=\"far fa-edit mr-1\"></i>Answer</a>\r\n                                    </span>\r\n                                </div>\r\n                            </div>\r\n                        </div>"
             make_link: false
             path: ''
             absolute: false
@@ -5269,6 +5693,69 @@ display:
           group_type: group
           admin_label: ''
           label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: append-video
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: true
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_entity_view
+          settings:
+            view_mode: default
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_video_file:
+          id: field_video_file
+          table: node__field_video_file
+          field: field_video_file
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -5306,14 +5793,80 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_entity_view
+          click_sort_column: display
+          type: file_video
           settings:
-            view_mode: default
-          group_column: target_id
+            use_description_as_link_text: 1
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_video_link:
+          id: field_video_link
+          table: node__field_video_link
+          field: field_video_link
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: append-video
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: true
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: video_embed_field_video
+          settings:
+            autoplay: false
+            responsive: true
+            width: 854
+            height: 480
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -5429,6 +5982,8 @@ display:
         - 'config:field.storage.node.field_pinned'
         - 'config:field.storage.node.field_tags'
         - 'config:field.storage.node.field_video'
+        - 'config:field.storage.node.field_video_file'
+        - 'config:field.storage.node.field_video_link'
         - 'config:field.storage.node.field_vote'
         - 'config:field.storage.user.user_picture'
   page_3:

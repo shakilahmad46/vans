@@ -9,6 +9,8 @@ dependencies:
     - field.field.node.ask_question.field_pinned
     - field.field.node.ask_question.field_tags
     - field.field.node.ask_question.field_video
+    - field.field.node.ask_question.field_video_file
+    - field.field.node.ask_question.field_video_link
     - field.field.node.ask_question.field_vote
     - node.type.ask_question
   module:
@@ -33,5 +35,7 @@ hidden:
   field_pinned: true
   field_tags: true
   field_video: true
+  field_video_file: true
+  field_video_link: true
   field_vote: true
   links: true
