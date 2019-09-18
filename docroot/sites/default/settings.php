@@ -789,9 +789,9 @@ if (file_exists('/var/www/site-php')) {
 
 
 $databases['default']['default'] = array (
-  'database' => 'vanss3',
+  'database' => 'vans',
   'username' => 'root',
-  'password' => '',
+  'password' => 'Madi@4623',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
