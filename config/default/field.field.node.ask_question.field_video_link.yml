@@ -1,0 +1,25 @@
+uuid: 2b4e38c8-c6c6-4a40-8395-5a47e120e68b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_link
+    - node.type.ask_question
+  module:
+    - video_embed_field
+id: node.ask_question.field_video_link
+field_name: field_video_link
+entity_type: node
+bundle: ask_question
+label: 'Video Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: '0'
+field_type: video_embed_field

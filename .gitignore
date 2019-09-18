@@ -3,4 +3,5 @@ docroot/files
 docroot/sites/*/files
 docroot/sites/*/settings.php
 docroot/sites/*/private
+docroot/sites/*/settings.php
 
