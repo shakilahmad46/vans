@@ -1,0 +1,27 @@
+uuid: 8086507d-8353-4e3e-9e88-04667536fc40
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.answer
+    - field.storage.comment.field_video_file
+  module:
+    - file
+id: comment.answer.field_video_file
+field_name: field_video_file
+entity_type: comment
+bundle: answer
+label: 'Video File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: mp4
+  max_filesize: '100 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

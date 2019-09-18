@@ -6,11 +6,10 @@ dependencies:
     - comment.type.answer
     - field.field.comment.answer.comment_body
     - field.field.comment.answer.field_rating
-    - field.field.comment.answer.field_video_answer
+    - field.field.comment.answer.field_video_file
   module:
-    - media_library
+    - file
     - text
-    - votingapi_widgets
 id: comment.answer.default
 targetEntityType: comment
 bundle: answer
@@ -29,19 +28,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-  field_rating:
-    weight: 3
-    settings:
-      show_initial_vote: 0
-    third_party_settings: {  }
-    type: voting_api_widget
-    region: content
-  field_video_answer:
-    type: media_library_widget
+  field_video_file:
     weight: 2
-    region: content
     settings:
-      media_types: {  }
+      progress_indicator: throbber
     third_party_settings: {  }
+    type: file_generic
+    region: content
 hidden:
+  field_rating: true
   subject: true
