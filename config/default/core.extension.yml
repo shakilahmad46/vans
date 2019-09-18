@@ -1,4 +1,5 @@
 module:
+  address: 0
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
@@ -16,6 +17,15 @@ module:
   ckeditor: 0
   color: 0
   comment: 0
+  commerce: 0
+  commerce_cart: 0
+  commerce_checkout: 0
+  commerce_log: 0
+  commerce_order: 0
+  commerce_payment: 0
+  commerce_price: 0
+  commerce_product: 0
+  commerce_store: 0
   config: 0
   config_pages: 0
   contact: 0
@@ -35,6 +45,7 @@ module:
   entity_browser_entity_form: 0
   entity_browser_example: 0
   entity_reference: 0
+  entity_reference_revisions: 0
   field: 0
   field_collection: 0
   field_collection_table: 0
@@ -85,6 +96,7 @@ module:
   shortcut: 0
   social_login: 0
   social_profile_field: 0
+  state_machine: 0
   system: 0
   taxonomy: 0
   text: 0
